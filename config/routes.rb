@@ -29,12 +29,14 @@ UserAntique::Application.routes.draw do
   get '/cart' => 'cart#index'
   get '/cart/:id' => 'cart#add'
   get '/category/:id' => 'items#category'
+  get '/cups' => 'category#cups'
   get '/search' => 'items#search'
 
   get '/cart/remove/:id' => 'cart#remove'
   get '/clearCart' => 'cart#clearCart'
 
   get '/myprofile' => 'profiles#myprofile'
+  get '/myprofile/pastorders' => 'profiles#pastorders', as: :pastorders_profiles
   get '/admin' => 'user#admin_login'
   get '/logout' => 'user#logout'
   get '/checkout' => 'cart#createOrder'

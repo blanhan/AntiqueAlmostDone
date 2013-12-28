@@ -3,10 +3,18 @@ header{
 	color: #ccc;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center; 
+	text-align: center;
 	font-family: 'Trebuchet','Verdana', 'Geneva', 'sans-serif';
 	font-size: 38px;
-} 
+}
+
+#catalog{
+    font-family: 'Trebuchet','Verdana', 'Geneva', 'sans-serif';
+    font-size: 15px;
+    color:black;
+    padding: 5px, 5px, 5px, 5px;
+    margin: 10px;
+}
 
 form{
 	width: 80em;
@@ -19,6 +27,11 @@ legend{
 	width: 80em;
 }
 
+#AboutUs{
+	margin: 30px;
+	padding: 30px;
+	text-align: left;
+}
 
 #slideshow{
 	margin: 10px;
@@ -27,18 +40,27 @@ legend{
 	margin-right: auto;
 }
 
+table{
+	text-align: center;
+	display: inline;
+}
+
 /* overflow-y: scroll prevents Login from moving onto next line - I think it trims the y axis */
  body{
-	padding: 0;
-	margin: 0;
-	text-align: center; 
+	padding: 5px 5px 5px 5px;
+	margin: 5px;
+	text-align: left;
+	display: inline-block;
 	overflow-y: scroll;
+    position: absolute;
 	font-family: Trebuchet MS;
-	font-size: 20px;
-	color: #A9A9A9;
-} 
+	font-size: 15px;
+	color: black;
+}
 
 h1{
+	padding: 0;
+	margin: 0;
 }
 
 h2{
@@ -57,7 +79,7 @@ a#changeLink{
 	width: 1675px;
 	padding: 0;
 	margin: 0;
-	text-align: center; 
+	text-align: center;
 	font-family: Trebuchet MS;
 	font-size: 20px;
 	color: #ccc;
@@ -71,34 +93,34 @@ a#changeLink{
 }
 
 /*not sure what width 950px does here */
-ul{
-	width: 1150px; 
+#nav ul{
+	width: 1150px;
 	height: 100px;
-	margin: auto; 
+	margin: auto;
 	list-style-type:none;
 	padding: 0;
 }
 
-ul li{
-	text-align: center; 
-	display:inline-block; 
+#nav ul li{
+	text-align: center;
+	display:inline-block;
 	font-size: 22px;
-	position:relative; 
-	padding:30px 20px 20px 0; 
+	position:relative;
+	padding:30px 20px 20px 0;
 	margin:0 0 0 40px;
 }
 
 a{
 	display:block;
 	width:90px;
-	
+
 }
 
 /*Note colour was  	#ccc before change */
 a: link, a:visited
 {
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; 
-	font-size: 20px; 
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 20px;
 	color: #808080;
 }
 
@@ -106,7 +128,7 @@ a: link, a:visited
 	text-decoration:underline;
 }
 
-#nav ul li a,visited{
+#nav ul li a.visited{
 	color: #A9A9A9;
 	display: block;
 	padding: 5px;
@@ -118,30 +140,31 @@ a: link, a:visited
 	text-decoration: none;
 }
 #nav li:hover ol{
-	display: block; float: left; 
-	position: absolute; 
-	background-color: pink; 
+	display: block; float: left;
+	position: absolute;
+	background-color: pink;
 	color: #ffffff;
-	text-align: centre;
+	text-align: center;
 }
 #nav ol{
-	display: none; 
-	padding:0; 
+	display: none;
+	padding:0;
 	margin:0;
 	height: 352px;
 }
 
 #nav ul ol li{
-	display: block;  
-	padding:10px; 
+	display: block;
+	padding:10px;
 	margin:10px;
 	color: #D3D3D3;
+}
 
-#TeaCupTable{
+#catalog{
 	width: 1150px;
 	height: 250px;
 	text-align: left;
-	position: center;	
+	position: relative;
 }
 
 table{
@@ -153,16 +176,10 @@ table{
 }
 
 th{
-	vertical-align: center;
+	vertical-align: middle;
 }
 
 p{
-	text-align: left;
-}
-
-#AboutUs{
-	margin: 30px;
-	padding: 30px;
 	text-align: left;
 }
 
@@ -171,6 +188,35 @@ p{
 	color:  #A9A9A9;
 }
 
-div#footer{
+
+#details{
+    float:right;
+    font-size: 15px;
+    color:black;
+    position: relative;
+}
+
+div.searchbox {
+    margin: 0px 0px 30px 5px;
+    padding: 5px;
+    height: 55px;
+    position: relative;
+    font-size: 10px;
+}
+
+
+#footer{
 	text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 10px;
+}
+
+ul li{
+    float: left;
+}
+
+ul {
+    list-style-type: none;
 }
